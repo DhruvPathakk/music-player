@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css ">
+</head>
+<body>
+    <header>
+        <img src="icons/playlist.svg" alt="Playlist" id="playlist-svg">
+        <h2>FEEL THE MUSIC</h2>
+        <img src="icons/music.svg" alt="Music" id="music-svg">
+    </header>
+    <main>
+        <div class="left">
+            <div class="song-img">
+
+            </div>
+            <div class="volume-div">
+                <div class="volume-img">
+                    <img src="icons/volume.svg" alt="Volume" id="vol-svg">
+                </div>
+                <input type="range" id="volume-range" oninput="volume()">
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="details">
+                <h3 id="song-name">Blinding Lights</h3>
+                <h5 id="song-singer">Weekend</h5>
+            </div>
+            <input type="range" id="song-duration" oninput="seekTrack()">
+            <div class="controls">
+                <div class="prev-img">
+                    <img src="icons/previous.svg" alt="Previous" id="prev-img" onclick="prevSong()">
+
+                </div>
+                <div class="play-pause">
+                    <img src="icons/play.svg" alt="Play" id="play-pause" onclick="togglePlayPause()">
+            
+                </div>
+                <div class="next">
+                    <img src="icons/next.svg" alt="Next" id="next-img" onclick="nextSong()">
+                </div>
+            </div>
+        </div>
+
+        <div class="playlist">
+            <div class="playlist-song">
+                <img src="images/image1.jpg" alt="">
+                <div class="song-details">
+                    <h3>Blinding Lights</h3>
+                    <h5>The Weekend</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="images/image2.jpg" alt="">
+                <div class="song-details">
+                    <h3>Save Your Tears</h3>
+                    <h5>The Weekend</h5>
+                </div>  
+            </div>
+            <div class="playlist-song">
+                <img src="images/image3.jpg" alt="">
+                <div class="song-details">
+                    <h3>Enemy</h3>
+                    <h5>Imagine Dragons</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="images/image4.jpg" alt="">
+                <div class="song-details">
+                    <h3>Sunflower</h3>
+                    <h5>Post Malone</h5>
+                </div>  
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
